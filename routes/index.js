@@ -3,7 +3,7 @@ const path = require('path');
 const router = express.Router();
 
 router.get('/:fileName', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../public', req.params.fileName));
+    res.sendFile(path.join(__dirname, '../ads', req.params.fileName));
 });
 
 router.get('/', (req, res, next) => {
